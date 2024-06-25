@@ -49,7 +49,7 @@ const MobileNav = () => {
                         const isActive = pathname === link.route;
 
                         return (
-                            <SheetClose asChild>
+                            <SheetClose asChild key={link.route}>
                                 <Link
                                     href={link.route}
                                     key={link.label}
